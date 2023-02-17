@@ -1,0 +1,47 @@
+--	PROBLEMA
+
+La empresa de seguros TK-U, demora bastante tiempo en llenar manualmente
+los datos de los clientes/asegurados.
+
+Se necesita de un proceso automatizado que pueda calcular todas los
+requerimientos que llenan.
+
+--	REQUERIMIENTOS
+
+1. La persona a asegurar tiene que ser mayor de edad, por lo cual no se
+consideran los casos en los cuales esto no sea verdad.
+
+2. Se tiene un plan base, al cual se le pueden aplicar recargos extra
+dependiendo de las condiciones del asegurado. Las condiciones que
+causan recargos son las siguientes:
+	a. Dependiendo de la edad del asegurado
+	b. Dependiendo de si el asegurado está casado o no y
+	dependiendo también de la edad del esposo/a del asegurado
+	c. Dependiendo de la cantidad de hijos o hijas que tenga el
+	asegurado.
+
+3. Para el primer y el segundo punto, son recargos basados en los rangos de
+edades:
+	a. Si tienen de 18 a 24 años, se les hará un recargo del 10% del precio base.
+	b. Si tienen de 25 a 49 años, se les hará un recargo del 20% del precio
+	base.
+	c. Si tienen 50 años o más, se les hará un recargo del 30% del precio base
+
+
+
+--	ANALISIS
+
+1.	El problema reside en que el proceso para el llenado de datos requiere
+de varias validaciones condicionales respecto al cliente/asegurado, ya que 
+debe validar si es mayor de edad, si tiene conyugue, cuantos años tiene el 
+conyugue y si tiene hijos.
+
+Para poder automatizar el problema se debe cumplir específicamente
+con los requerimientos de forma mas eficaz y ordenada; validando en todo caso 
+el rango de edades que se tienen establecidos, ya sea: CLIENTE Y CONYUGUE.
+
+2.	Los casos mas esenciales en los que se estan considerando 
+	cambiar el valor de la cotizacion son:
+	- La edad del cliente
+	- La edad del conyugue (si tiene)
+	- La cantidad de hijos (si tiene)
